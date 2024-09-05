@@ -14,8 +14,12 @@ function App() {
     setCounter(counter-1)
   }
   
-  
-
+  if(counter <= -1){
+    setCounter(0);
+  }
+  if (counter >= 21) {
+    setCounter(20);
+  }
   return (
     <>
       <h1>YASH BHARDWAJ REACT</h1>
